@@ -55,6 +55,7 @@ class _MyHomePageState extends State<MyHomePage> {
     var id = await dbhelper.deletedata(2);
     log(id.toString());
   }
+
   void upadate() async {
     var id = await dbhelper.update(4);
     log(id.toString());
@@ -75,7 +76,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ElevatedButton(onPressed: queryall, child: Text('QUERY')),
             ElevatedButton(
                 onPressed: queryspecific, child: Text('QUERY SPECIFIC')),
-            ElevatedButton(onPressed:upadate, child: Text('UPDATE')),
+            ElevatedButton(onPressed: upadate, child: Text('UPDATE')),
             ElevatedButton(onPressed: delete, child: Text('DELETE')),
           ],
         ),
